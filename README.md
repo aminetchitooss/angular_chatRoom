@@ -3,9 +3,13 @@
 I'm using my Node.js Websocket Api. --> [link](https://github.com/aminetchitooss/node_socket) 
 
 
-![](images/home.png)
 
-![](images/homePhone.png)
+
+
+
+Desk View                  |  Phone View
+:-------------------------:|:-------------------------:
+![](images/home.png)       |  ![](images/homePhone.png)
 
 
 ## How to use
