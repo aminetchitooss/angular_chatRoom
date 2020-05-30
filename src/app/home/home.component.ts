@@ -4,7 +4,6 @@ import { DataService } from '../shared/services/data.service';
 import { ApiService } from '../shared/services/api.service';
 import { ModalService } from '../shared/services/modal.service';
 import { WebSocketService } from '../shared/services/web-socket.service';
-import { CreateNameModalComponent } from '../create-name-modal/create-name-modal.component';
 
 @Component({
   selector: 'app-home',

@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { DataService } from './data.service';
-import { CreateGameModalComponent } from 'src/app/create-game-modal/create-game-modal.component';
 import { CreateNameModalComponent } from 'src/app/create-name-modal/create-name-modal.component';
 import { Router } from '@angular/router';
 

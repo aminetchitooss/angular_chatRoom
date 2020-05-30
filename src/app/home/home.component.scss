@@ -45,7 +45,6 @@
 }
 .container p {
   font-family: "fontTitle";
-  font-size: 4em;
   background: -webkit-linear-gradient($danger, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -56,5 +55,15 @@
   align-items: flex-start;
   input {
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .container p {
+    font-size: 3em;
+  }
+}
+@media (min-width: 500px) {
+  .container p {
+    font-size: 4em;
   }
 }
