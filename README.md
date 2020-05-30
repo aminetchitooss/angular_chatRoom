@@ -1,11 +1,6 @@
 # Realtime chatroom
 
-I'm using my Node.js Websocket Api. --> [link](https://github.com/aminetchitooss/node_socket) 
-
-
-
-
-
+I'm using my Node.js [Websocket API](https://github.com/aminetchitooss/node_socket) 
 
 Desk View                  |  Phone View
 :-------------------------:|:-------------------------:
