@@ -1,0 +1,23 @@
+<div id="bg">
+    <div class="carousel slide h-100" data-ride="carousel" id="myCarousel">
+        <div class="carousel-inner  h-100">
+            <div *ngFor='let item of listCaroussel' class="carousel-item h-100">
+                <img class="d-block h-100 w-100" src="{{item}}" alt="First slide">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <p>Welcome aboard</p>
+    <form class="form" *ngIf='isNotAdmin; else admin'>
+        <label for="game">Game name</label>
+        <input type="text" [(ngModel)]="gameName" name="game" required>
+        <button class="btn btn-primary btl-lg" (click)='createGame()'>Create a session</button>
+    </form>
+    <ng-template #admin>
+        <button class="btn btn-primary btl-lg" (click)='createGame()'>Join current session</button>
+    </ng-template>
+</div>
+<div class="greeting">
+    Who will you be
+</div>

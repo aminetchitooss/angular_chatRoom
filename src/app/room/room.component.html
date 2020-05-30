@@ -1,0 +1,37 @@
+<div *ngIf='begin' class="h-100">
+    <div class="pending h-100" *ngIf='gameOn;else pending'>
+
+
+        <div id="frame">
+            <div class="content h-100">
+                <div class="text-center header">
+                    <p class="title">{{currentGame.name}}</p>
+                </div>
+                <div class="messages" id="messageList">
+                    <div *ngFor='let item of messageList' [ngClass]="{ 'sent': item.mine, 'replies': !item.mine}">
+                        <b>{{item.user.name}}</b>
+                        <div class="msgStamp">
+                            <p>{{item.message}}</p>
+                            <span>{{ds.formatTime(item.date)}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-input">
+                    <form class="w-100">
+                        <div class="wrap">
+                            <input type="text" name="msg" [(ngModel)]="msgToSend" placeholder="Write your message..." />
+                            <button class="submit" (click)='sendMsg()'><i class="fa fa-paper-plane"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <ng-template #pending>
+        <app-home></app-home>
+    </ng-template>
+</div>

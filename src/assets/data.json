@@ -1,0 +1,60 @@
+{
+    "msgList": [
+        {
+            "user": {
+                "id": "2",
+                "name": "Harvey"
+            },
+            "date": "1590774598853",
+            "message": "Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things."
+        },
+        {
+            "user": {
+                "id": "1590743147276",
+                "name": "Mike"
+            },
+            "date": "1590774498853",
+            "message": "What are you talking about? You do what they say or they shoot you."
+        },
+        {
+            "user": {
+                "id": "2",
+                "name": "Harvey"
+            },
+            "date": "1590774398853",
+            "message": "No, I told him that."
+        },
+        {
+            "user": {
+                "id": "1590743147276",
+                "name": "Mike"
+            },
+            "date": "1590774298853",
+            "message": "Oh yeah, did Michael Jordan tell you that?"
+        },
+        {
+            "user": {
+                "id": "2",
+                "name": "Harvey"
+            },
+            "date": "1590774198853",
+            "message": "Excuses don't win championships."
+        },
+        {
+            "user": {
+                "id": "2",
+                "name": "Harvey"
+            },
+            "date": "1590774098853",
+            "message": "When you're backed against the wall, break the god damn thing down."
+        },
+        {
+            "user": {
+                "id": "1590743147276",
+                "name": "Mike"
+            },
+            "date": "1590773998853",
+            "message": "How the hell am I supposed to get a jury to believe you when I am not even sure that I do?!"
+        }
+    ]
+}

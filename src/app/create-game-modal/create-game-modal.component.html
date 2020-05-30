@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="frame" >
+        <div class="title">
+            <b>Lobby</b>
+        </div>
+        <p class="pb-3 pt-4">Send this link to other players </p>
+        <div class="link">
+            <input id="text" type="text" [(ngModel)]="link">
+            <button (click)="copyText($event);tooltip.show()" #tooltip="matTooltip" (mouseout)="resetTooltip($event)"
+                [matTooltip]="toolTipValue" matTooltip="">
+                <svg-icon src="assets/images/copy.svg" [applyClass]="true" [class]="'fill-primary'">
+                </svg-icon>
+            </button>
+        </div>
+        <div class="list">
+            <b>Players who joined:</b>
+            <div class="group">
+                <div class="player" *ngFor='let player of playersList'>
+                    <p>{{player.name}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="pending" *ngIf='!gameCreator;else admin'>
+            <em><b>{{gameMaster.name }}</b> will start the game when ready!</em>
+        </div>
+        <ng-template #admin>
+            <div class="text-right">
+                <div class="play" *ngIf='playersList.length > 1; else pending'>
+                    <p>All set ?</p>
+                    <button mat-raised-button color="primary" [mat-dialog-close]="true" (click)="begin()">Play</button>
+                </div>
+                <ng-template #pending>
+                    <em>We still need 1 player</em>
+                </ng-template>
+            </div>
+        </ng-template>
+    </div>
+</div>

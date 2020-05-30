@@ -1,0 +1,15 @@
+@import "../../variables.scss";
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  input {
+    padding: 7px 15px;
+    border-radius: 20px;
+    width: 100%;
+    border: 1px solid $dark
+  }
+}

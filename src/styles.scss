@@ -1,0 +1,51 @@
+@import "variables.scss";
+
+html,
+body {
+  height: 100%;
+}
+body,
+p {
+  margin: 0;
+}
+.loaderDim {
+  width: 260px;
+  position: relative;
+  top: 0px;
+}
+
+img,
+video {
+  object-fit: cover;
+  // object-position: 0 0;
+}
+
+@font-face {
+  font-family: "FontBold";
+  src: url("assets/Font/mplus-1p-bold.woff");
+}
+
+@font-face {
+  font-family: "FontRegular";
+  src: url("assets/Font/mplus-1p-regular.woff");
+}
+
+@font-face {
+  font-family: "FontLight";
+  src: url("assets/Font/mplus-1p-light.woff");
+}
+
+@font-face {
+  font-family: "fontTitle";
+  src: url("assets/Font/Cream-Peach.woff");
+}
+
+$themeList: "warning" "success" "lightdark" "danger" "primary";
+$colorsTypes: $warning $success $lightdark $danger $primary;
+$styleTheme: zip($themeList, $colorsTypes);
+
+@each $var in $styleTheme {
+  .fill-#{nth($var,1)} {
+    fill: nth($var, 2);
+  }
+}
